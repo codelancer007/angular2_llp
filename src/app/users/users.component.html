@@ -1,0 +1,57 @@
+<div class="col-md-12 section-gap">
+  <div class="row">
+    <div class="col-md-12 search-box">
+      <input name="search" [(ngModel)]="search" class="form-control" ngDefaultControl (ngModelChange)="filter($event)"
+        placeholder="Search">
+    </div>
+    <div class="panel">
+      <div class="panel-heading">
+        <h1>Users</h1>
+      </div>
+      <div class="panel-body">
+        <ng-template ngFor let-user [ngForOf]="users" let-rowId="index">
+          <div class="col-md-2 col-sm-3 col-xs-12">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/user.png" alt="Card image cap" [routerLink]="['user-info/', user.login]"/>
+              <div class="card-body">
+                <h5 class="card-title">{{user.login}}</h5>
+                <p class="card-text">{{user.location}}</p>
+                <a class="btn btn-primary" (click)="selected(user.id)">Add</a>&nbsp;<a class="btn btn-default" (click)="removeUser(user.id)">Cancel</a>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <div *ngIf="users.length == 0" class="col-md-12">
+          <p class="alert aler-info">No Users</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="shortlist">
+    <div class="row">
+      <div class="panel">
+        <div class="panel-heading">
+          <h1>Shortlisted</h1>
+        </div>
+        <div class="panel-body">
+          <ng-template ngFor let-user [ngForOf]="shortlisted" let-rowId="index">
+            <div class="col-md-2 col-sm-3 col-xs-12">
+              <div class="card">
+                <img class="card-img-top" src="assets/img/user.png" alt="Card image cap"  [routerLink]="['user-info/', user.login]"/>
+                <div class="card-body">
+                  <h5 class="card-title">{{user.login}}</h5>
+                  <p class="card-text">{{user.location}}</p>
+                  <a class="btn btn-primary" (click)="remove(user.id)">Remove</a>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <div *ngIf="shortlisted.length == 0" class="col-md-12">
+            <p class="alert alert-info">No Shortlisted Users</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

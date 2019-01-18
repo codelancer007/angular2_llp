@@ -1,0 +1,51 @@
+.inputFieldAppearance {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.fontSmoothing {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.borderRadius (@radius: 4px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.borderTopBottom(@color) {
+	border-top: 2px solid @color;
+	border-bottom: 2px solid @color;
+}
+
+// In case we need to go back to the original backgrounds...
+// .TaskIcon(@color, @background) {
+// 	height: 100%;
+// 	border: solid 2px @color;
+// 	background-color: @background;
+// 	position: relative;
+// 	margin-right: 10px;
+// 	cursor: pointer;
+// }
+
+.TaskIcon(@color, @background) {
+	height: 100%;
+	border: solid 1px @color;
+	background-color: #fff;
+	color: @background;
+	position: relative;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.Container(@color, @background) {
+	margin: 5px 0 0;
+	border: solid 2px @color;
+	padding: 12px 12px 12px 12px;
+	position: relative;
+	background: @background;
+}

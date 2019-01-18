@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "NeueHaasGroteskDisp W02 Bd";
+    src: url(../fonts/UsedFonts/NHaasGroteskDSW02-75Bd.eot?#iefix);
+    src: url(../fonts/UsedFonts/NHaasGroteskDSW02-75Bd.eot?#iefix) format("eot"), url(../fonts/UsedFonts/NHaasGroteskDSW02-75Bd.woff2) format("woff2"), url(../fonts/UsedFonts/NHaasGroteskDSW02-75Bd.woff) format("woff"), url(../fonts/UsedFonts/NHaasGroteskDSW02-75Bd.ttf) format("truetype"), url(../fonts/UsedFonts/NHaasGroteskDSW02-75Bd.svg) format("svg#NHaasGroteskDSW02-75Bd");
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px
+}
+
+@font-face {
+    font-family: "NeueHaasGroteskDisp W02";
+    src: url(../fonts/UsedFonts/NeueHaasGroteskDispW02.eot?#iefix);
+    src: url(../fonts/UsedFonts/NeueHaasGroteskDispW02.eot?#iefix) format("eot"), url(../fonts/UsedFonts/NeueHaasGroteskDispW02.woff) format("woff"), url(../fonts/UsedFonts/NeueHaasGroteskDispW02.woff2) format("woff2"), url(../fonts/UsedFonts/NeueHaasGroteskDispW02.ttf) format("truetype"), url(../fonts/NeuUsedFontseHaas/NeueHaasGroteskDispW02.svg) format("svg#NeueHaasGroteskDispW02");
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px
+}
+@font-face {
+    font-family: "nhg-text-italic";
+    src: url(../fonts/UsedFonts/NHaasGroteskDSW01-56italic.eot?#iefix);
+    src: url(../fonts/UsedFontsNHaasGroteskDSW01-56italic.eot?#iefix) format("eot"), url(../fonts/UsedFonts/NHaasGroteskDSW01-56italic.woff2) format("woff2"), url(../fonts/UsedFonts/NHaasGroteskDSW01-56italic.woff) format("woff"), url(../fonts/UsedFonts/NHaasGroteskDSW01-56italic.ttf) format("truetype"), url(../fonts/UsedFonts/NHaasGroteskDSW01-56italic.svg) format("svg");
+    letter-spacing: 1px;
+}
+@font-face {
+    font-family: "nhg55-text-roman";
+    src: url(../fonts/UsedFonts/NeueHaasGroteskTextW01-55.eot?#iefix);
+    src: url(../fonts/UsedFonts/NeueHaasGroteskTextW01-55.eot?#iefix) format("eot"), url(../fonts/UsedFonts/NeueHaasGroteskTextW01-55.woff2) format("woff2"), url(../fonts/UsedFonts/NeueHaasGroteskTextW01-55.woff) format("woff"), url(../fonts/UsedFonts/NeueHaasGroteskTextW01-55.ttf) format("truetype"), url(../fonts/UsedFonts/NeueHaasGroteskTextW01-55.svg) format("svg");
+    letter-spacing: 1px;
+}

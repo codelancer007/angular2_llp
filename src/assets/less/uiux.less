@@ -1,0 +1,152 @@
+@import "uiux-colors.less";
+@import "uiux-mixins.less";
+@-ms-viewport {
+    width: auto ! important
+}
+
+html {
+    height: 100%;
+}
+.datetimepicker{
+    z-index: 1 !important;
+}
+body {
+    font-family: "nhg-text-roman", arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    background-color: @BodyBackground;
+    margin: 0px 0 0;
+    margin-bottom: 10px;
+    /*26px*/
+    padding-right: 0px !important;
+    height: 100%;
+}
+
+hr {
+    border-top: 2px solid #d9d9d9;
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: @h1Color;
+    font-family: Helvetica, Arial, sans-serif;
+    Font-weight: bold;
+    .wf-active & {
+        font-family: "NeueHaasGroteskDisp W02 Bd" !important;
+    }
+}
+
+h1 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 16px;
+    margin-top: 5px !important;
+}
+
+h3 {
+    font-size: 14px;
+}
+.cleaner {
+    width: 100%;
+    &:before {
+        display: table;
+        content: " ";
+        box-sizing: border-box;
+    }
+    &:after {
+        display: table;
+        content: " ";
+        box-sizing: border-box;
+        clear: both;
+    }
+}
+.h10{
+    height: 10px;
+}
+.h20{
+    height: 20px;
+}
+.container {
+    width: 100%;
+    padding: 0;
+}
+
+.container-white {
+    background-color: @ContainerBackground;
+}
+.pad-0{
+    padding: 0px;
+}
+.pad-t-10{
+    padding-top: 10px;
+}
+.pad-lr-0{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.pad-lr-5{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.mar-r-10{
+    margin-right: 10px;
+}
+.mar-t-10{
+    margin-top: 10px;
+}
+.mar-b-10{
+    margin-bottom: 10px;
+}
+.mar-l-10{
+    margin-left: 10px;
+}
+.vz-container {
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    &:before {
+        display: table;
+        content: " ";
+        box-sizing: border-box;
+    }
+    &:after {
+        display: table;
+        content: " ";
+        box-sizing: border-box;
+        clear: both;
+    }
+    &.step {
+        background-position: 49.5% 50%;
+    }
+    .field-css {
+        font-family: "nhg-text-medium";
+        color: #494b4b;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        margin-bottom: 10px;
+        padding-left: 0px;
+        text-align: left;
+        .col-lg-2 {
+            margin-bottom: 10px;
+        }
+    }
+    .inline-btns {
+        display: inline-block;
+    }
+}
